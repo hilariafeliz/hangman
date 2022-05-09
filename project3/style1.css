@@ -1,0 +1,119 @@
+body {
+  background-image: url(img/Cool-Boys-Background-Images.jpeg);
+  background-size: cover;
+}
+
+main {
+  max-width: 610px;
+  margin: auto;
+}
+
+h1, h5 {
+  text-align: center;
+  color: rgb(255, 16, 16);
+}
+
+.win {
+  color: white;
+  background-color: green;
+}
+
+.loss {
+  color: white;
+  background-color: red;
+}
+
+#word {
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 24pt;
+  color: rgb(253, 253, 253);
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(100, 87, 87, 0.815);
+}
+
+#guesses {
+  text-align: center;
+  font-size: 16pt;
+  color: rgb(245, 241, 240);
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.guess {
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+    #guesses {
+    text-align: center;
+    font-size: 24pt;
+    color: rgb(241, 80, 75);
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .guess {
+    padding: 30px;
+    display: inline-block;
+    border: 2px solid rgb(170, 75, 59);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+#guessBox {
+    height: 60px;
+    border-radius: 20px;
+    padding-top: 5px;
+    font-size: 18pt;
+    width: 200px;
+    padding-left: 10px;
+}
+
+/* Buttons */
+.button {
+align-items: center;
+appearance: none;
+background-image: radial-gradient(100% 100% at 100% 0, #f73434 0, #5468ff 100%);
+border: 0;
+border-radius: 6px;
+box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-flex;
+font-family: "JetBrains Mono",monospace;
+height: 48px;
+justify-content: center;
+line-height: 1;
+list-style: none;
+overflow: hidden;
+padding-left: 16px;
+padding-right: 16px;
+position: relative;
+text-align: left;
+text-decoration: none;
+transition: box-shadow .15s,transform .15s;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+will-change: box-shadow,transform;
+font-size: 18px;
+}
+
+.button:hover {background-color: rgb(233, 233, 216)}
+
+.button:active {
+  background-color: rgb(175, 82, 82);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
